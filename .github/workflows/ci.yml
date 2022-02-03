@@ -15,9 +15,9 @@ jobs:
         with: 
           node-version: "12.x"
       - run: npm ci
-      - run: react-scripts test --coverage --watchAll
+      - run: npm test -- --coverage 
         env:
-          CI: true
+          CI: true npm test
       - name: Build Project
         if: github.event_name == 'push'
         run: npm run build

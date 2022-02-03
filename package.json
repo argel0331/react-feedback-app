@@ -15,7 +15,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "npm run test",
+    "dev-test": "nodemon --exec babel-node spec/run.js",
+    "test": "babel-node spec/run.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
